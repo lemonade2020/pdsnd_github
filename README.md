@@ -5,7 +5,7 @@ Aug/01/2020
 Project Bikeshare
 
 ### Description
-An interactive program with users to show bikeshare data in three US major cities
+A program that creates an interactive experience by showing bikeshare data in three US major cities according to user's choices.
 
 ### Files used
 chicago.csv
