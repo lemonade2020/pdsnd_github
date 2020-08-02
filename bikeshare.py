@@ -71,7 +71,7 @@ def load_data(city, month, day):
     df['week_day']=df['Start Time'].dt.day_name()
     df['start_hour']=df['Start Time'].dt.hour
     df['end_hour']=df['End Time'].dt.hour
-    column_names=df.columns
+    
 
     return df
 
