@@ -80,6 +80,9 @@ def station_stats(df):
 
     # TO DO: display most frequent combination of start station and end station trip
 
+    # TO DO: display number of start stations
+
+    # TO DO: display number of end stations
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
