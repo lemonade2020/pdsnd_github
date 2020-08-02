@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+Aug/01/2020
 
 ### Project Title
-Replace the Project Title
+Project Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+An interactive program with users to show bikeshare data in three US major cities
 
 ### Files used
-Include the files used
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Stack Overflow bloggs (stackoverflow.com)
