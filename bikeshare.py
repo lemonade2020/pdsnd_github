@@ -17,15 +17,33 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    city=input('Which city data do you want to explore? Choose from Chicago, New York City or Washington:\n').lower()
 
+    while city not in ["chicago", "new york city", "washington"] :
+        print("sorry! enter a valid city")
+        city=input('Which city data do you want to explore? Choose from Chicago, New York City or Washington:')
+        print(city)
 
-
-
-    # TO DO: get user input for month (all, january, february, ... , june)
-
+# TO DO: get user input for month (all, january, february, ... , june)
+    month=input('select desired month from January, February, March, April, May, June or all?\n').title()
+    print("select:", month)
+    while month not in ["January","February", "March", "April","May","June", "All"]:
+        print("sorry! enter valid month")
+        month=input('select desired month from January, February, March, April, May, June or all?\n').title()
+    if month !='All':
+        print("selected month is:", month)
+    else:
+        month =['January', 'Feburary', 'March', 'April', 'May', 'June']
+        print("selected months are:", month)
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 
+    day=input('select desired day of the week or all: \n').title()
+    if day !='All':
+        print ("selected day of week is:", day)
+    else:
+        day=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+        print("you selected:", day)
 
     print('-'*40)
     return city, month, day
