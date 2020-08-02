@@ -133,6 +133,17 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+    i=0
+    while True:
+        raw_data=input('would you like to see next 5 rows of raw data? enter Yes or No:\n').lower()
+        if raw_data!='yes':
+            break
+
+        else:
+            print(df[i:i+5])
+            i +=5
+
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
